@@ -1,5 +1,8 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="User.master.cs" Inherits="WebApplication4100.User" %>
 
+<%@ Register Src="~/UserControls/LoginStatus.ascx" TagPrefix="uc1" TagName="LoginStatus" %>
+
+
 <!DOCTYPE html>
 
 <html>
@@ -12,6 +15,10 @@
     <form id="form1" runat="server">
         <img src="Images/sam-online-banner.jpg" />
 
+        <div>
+            <uc1:LoginStatus runat="server" id="LoginStatus" />
+        </div>
+        <br />
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>

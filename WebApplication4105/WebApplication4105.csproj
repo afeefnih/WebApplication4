@@ -166,6 +166,7 @@
     <Content Include="Login.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Styles\StyleSheet1.css" />
+    <Content Include="UserControls\LoginStatus.ascx" />
     <Content Include="Web.config" />
     <Content Include="WebFormShop.aspx" />
   </ItemGroup>
@@ -216,6 +217,13 @@
     </Compile>
     <Compile Include="User.Master.designer.cs">
       <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LoginStatus.ascx.cs">
+      <DependentUpon>LoginStatus.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\LoginStatus.ascx.designer.cs">
+      <DependentUpon>LoginStatus.ascx</DependentUpon>
     </Compile>
     <Compile Include="WebFormShop.aspx.cs">
       <DependentUpon>WebFormShop.aspx</DependentUpon>

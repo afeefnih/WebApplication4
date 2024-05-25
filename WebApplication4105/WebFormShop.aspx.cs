@@ -21,6 +21,12 @@ namespace WebApplication4105
             //is being loaded (i.e., it is not a postback) and, if so,
             //calls the GenerateSalesId method.
             //Other meaning, the Sales ID will not change if the user click any button
+
+            if (Session["Role"] == null)
+            {
+                Response.Redirect("default.aspx");
+            }
+
             if (!IsPostBack)
             {
                 GenerateSalesId();
