@@ -1,0 +1,279 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{76A0A93D-D008-4C0C-9260-AAB15F841E39}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication4100</RootNamespace>
+    <AssemblyName>WebApplication4100</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44327</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin.aspx" />
+    <Content Include="App_Data\OnlineShopDb.mdf" />
+    <Content Include="App_Data\OnlineShopDb_log.ldf">
+      <DependentUpon>OnlineShopDb.mdf</DependentUpon>
+    </Content>
+    <Content Include="default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\1.png" />
+    <Content Include="Images\10.png" />
+    <Content Include="Images\11.png" />
+    <Content Include="Images\12.png" />
+    <Content Include="Images\13.png" />
+    <Content Include="Images\14.png" />
+    <Content Include="Images\15.png" />
+    <Content Include="Images\2.png" />
+    <Content Include="Images\3.png" />
+    <Content Include="Images\4.png" />
+    <Content Include="Images\5.png" />
+    <Content Include="Images\6.png" />
+    <Content Include="Images\7.png" />
+    <Content Include="Images\8.png" />
+    <Content Include="Images\9.png" />
+    <Content Include="Images\almond.png" />
+    <Content Include="Images\anthurium.png" />
+    <Content Include="Images\archery.png" />
+    <Content Include="Images\aster.png" />
+    <Content Include="Images\baking.png" />
+    <Content Include="Images\bear.png" />
+    <Content Include="Images\bee.png" />
+    <Content Include="Images\bougainvillea.png" />
+    <Content Include="Images\bug.png" />
+    <Content Include="Images\butterfly.png" />
+    <Content Include="Images\camping.png" />
+    <Content Include="Images\carnation.png" />
+    <Content Include="Images\cat.png" />
+    <Content Include="Images\chameleon.png" />
+    <Content Include="Images\chess.png" />
+    <Content Include="Images\chimpanzee.png" />
+    <Content Include="Images\chrysanthemum.png" />
+    <Content Include="Images\climbing.png" />
+    <Content Include="Images\computer-gaming.png" />
+    <Content Include="Images\cow.png" />
+    <Content Include="Images\crab.png" />
+    <Content Include="Images\crocodile.png" />
+    <Content Include="Images\cycling.png" />
+    <Content Include="Images\daffodil.png" />
+    <Content Include="Images\dahlia.png" />
+    <Content Include="Images\daisy.png" />
+    <Content Include="Images\deer.png" />
+    <Content Include="Images\dog.png" />
+    <Content Include="Images\dragonfly.png" />
+    <Content Include="Images\eagle.png" />
+    <Content Include="Images\elephant.png" />
+    <Content Include="Images\fishing.png" />
+    <Content Include="Images\fox.png" />
+    <Content Include="Images\frog.png" />
+    <Content Include="Images\gardening.png" />
+    <Content Include="Images\ginger.png" />
+    <Content Include="Images\giraffe.png" />
+    <Content Include="Images\goat.png" />
+    <Content Include="Images\goldfish.png" />
+    <Content Include="Images\guitar.png" />
+    <Content Include="Images\horse-riding.png" />
+    <Content Include="Images\jasmine.png" />
+    <Content Include="Images\koala.png" />
+    <Content Include="Images\lily.png" />
+    <Content Include="Images\lion.png" />
+    <Content Include="Images\lotus.png" />
+    <Content Include="Images\motorsport.png" />
+    <Content Include="Images\nymphea.png" />
+    <Content Include="Images\oleander.png" />
+    <Content Include="Images\orchid.png" />
+    <Content Include="Images\origami.png" />
+    <Content Include="Images\owl.png" />
+    <Content Include="Images\painting.png" />
+    <Content Include="Images\parachuting.png" />
+    <Content Include="Images\pear.png" />
+    <Content Include="Images\petunia.png" />
+    <Content Include="Images\piano.png" />
+    <Content Include="Images\poppy.png" />
+    <Content Include="Images\pottery.png" />
+    <Content Include="Images\puzzle-solving.png" />
+    <Content Include="Images\rabbit.png" />
+    <Content Include="Images\raccoon.png" />
+    <Content Include="Images\rose.png" />
+    <Content Include="Images\sam-online-banner.jpg" />
+    <Content Include="Images\snowboarding.png" />
+    <Content Include="Images\stamp-collecting.png" />
+    <Content Include="Images\starfish.png" />
+    <Content Include="Images\sunflower.png" />
+    <Content Include="Images\tiger.png" />
+    <Content Include="Images\toy-train.png" />
+    <Content Include="Images\trekking.png" />
+    <Content Include="Images\WebForm1.aspx" />
+    <Content Include="Images\weightlifting.png" />
+    <Content Include="Images\yoga.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="Register.aspx" />
+    <Content Include="Styles\StyleSheet1.css" />
+    <Content Include="Web.config" />
+    <Content Include="WebFormShop.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Images\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Images\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PBKDF2Hash.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User.Master.cs">
+      <DependentUpon>User.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User.Master.designer.cs">
+      <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebFormShop.aspx.cs">
+      <DependentUpon>WebFormShop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormShop.aspx.designer.cs">
+      <DependentUpon>WebFormShop.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="User.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58399</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44327/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

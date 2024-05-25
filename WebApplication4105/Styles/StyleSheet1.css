@@ -1,0 +1,10 @@
+﻿.leftColumn{
+    width: 600px;
+    float: left;
+    margin-top: 10px;
+}
+
+.rightColumn{
+    margin-left: 650px;
+    margin-top:10px;
+}
